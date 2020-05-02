@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.clock {
+  width: 600px;
+  height: 600px;
+  border: 1px #000 solid;
+  border-radius: 50%;
+  background-image: url("../images/face.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .clock div {
+    position: absolute; }
+  .clock__minutes {
+    width: 12px;
+    height: 70%;
+    z-index: 1;
+    -webkit-animation: linear rotate-arrow 3600s infinite;
+            animation: linear rotate-arrow 3600s infinite; }
+  .clock__seconds {
+    width: 7px;
+    height: 90%;
+    z-index: 2;
+    -webkit-animation: linear rotate-arrow 60s infinite;
+            animation: linear rotate-arrow 60s infinite; }
+  .clock__point {
+    background: #001aff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 3; }
+  .clock__arrow {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px; }
+    .clock__arrow--minute {
+      background: #ff0008; }
+    .clock__arrow--second {
+      background: #001aff; }
+
+@-webkit-keyframes rotate-arrow {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes rotate-arrow {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
