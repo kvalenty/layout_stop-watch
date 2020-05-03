@@ -30,7 +30,18 @@
     height: 45%;
     -webkit-animation: linear rotate-arrow 60s infinite;
             animation: linear rotate-arrow 60s infinite;
-    background: #001aff; }
+    background: #001aff;
+    position: relative; }
+    .clock__seconds::before {
+      content: "";
+      position: absolute;
+      top: -27px;
+      left: -12px;
+      display: block;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom-color: #001aff; }
   .clock__point {
     width: 30px;
     height: 30px;
