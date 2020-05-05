@@ -9,8 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   position: relative;
   border-radius: 50%;
   background: no-repeat center/100% url("../images/face.jpg"); }
